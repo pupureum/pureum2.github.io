@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2017203096_이푸름</title>
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story|Gugi|Lobster|Akronim|Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script type="text/javascript">
+
+    function realtimeClock() {
+      document.rtcForm.rtcInput.value = getTimeStamp();
+      setTimeout("realtimeClock()", 1000);
+    }
+
+
+    function getTimeStamp() {
+      var d = new Date();
+
+      var s =
+        leadingZeros(d.getFullYear(), 4) + '-' +
+        leadingZeros(d.getMonth() + 1, 2) + '-' +
+        leadingZeros(d.getDate(), 2) + ' ' +
+
+        leadingZeros(d.getHours(), 2) + ':' +
+        leadingZeros(d.getMinutes(), 2) + ':' +
+        leadingZeros(d.getSeconds(), 2);
+
+      return s;
+    }
+
+    function leadingZeros(n, digits) {
+      var zero = '';
+      n = n.toString();
+
+      if (n.length < digits) {
+        for (i = 0; i < digits - n.length; i++)
+          zero += '0';
+      }
+      return zero + n;
+    }
+    </script>
+
+    <script type="text/javascript">
+
+    function ready(){
+
+    }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#hide").click(function(){
+    $("p").hide();
+      });
+    $("#show").click(function(){
+    $("p").show();
+      });
+    });
+    </script>
+
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .mySlides {display:none;}
+
+      .wrap {
+        width: 1200px;
+        margin: auto;
+      }
+
+      .추가 {
+      font-family: 'Lobster', cursive;
+      color: #2E9AFE;
+      font-size:130%;
+            }
+
+      .header {
+      font-family: 'Gugi', cursive;
+      color: #FE2E9A;
+      font-weight:bold;
+      background: linear-gradient(to bottom, rgba(94,196,237,1) 0%,rgba(183,229,247,1) 35%,rgba(254,255,255,1) 74%);
+            }
+
+      .Title {
+        height:120px;
+        font-size:200%;
+        left: 200px;
+        text-align: center;
+      }
+
+      .menu {
+        background-color: #C8AEF4;
+        height: 50px;
+      }
+
+      .menu ul li:hover {
+        background: skyblue;
+        font-size: 20px;
+      }
+
+      .menu ul {
+        list-style: none;
+      }
+
+      .menu ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin: 15px;
+      }
+
+      .menu ul li {
+        float: left;
+        height: 49px;
+        width: 300px;
+        text-align: center;
+        opacity: 0.8;
+        transition: 1.5s;
+        font-weight: bold;
+      }
+
+      .content {
+        width: 1200px;
+        height: 250px;
+        margin-top: 15px;
+      }
+
+      .first {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .second {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .third {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .fourth {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+
+      .text {
+        text-align: justify;
+        padding: 10px;
+        font-family: 휴먼매직체, serif;
+        font-size: 25px;
+      }
+
+      .contents {
+        width: 1200px;
+        margin: auto;
+        margin-top: 15px;
+
+      }
+
+      .Travel {
+        float: left;
+        width: 1200px;
+        margin: 5px;
+        font-family: 'Poor Story', cursive;
+        font-size: 25px;
+      }
+
+
+      .relation img {
+        margin: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <body onload="realtimeClock()">
+    <form name="rtcForm">
+    <input type="text" name="rtcInput" size="20px" readonly="readonly"  />
+    </form>
+    </body>
+
+    <div class="wrap">
+      <div class="추가">
+        <a href="sub.htm" target="_blank">Here!</a>  <!--새로운 창 이 아닌 새 탭에서 연다. -->
+        <p>Share your own bucket list !! Add by clicking 'Here!'</p>
+      </div>
+      <div class="header">
+
+        <p align="right">지나가 버린 나날은 또 다시 내 앞으로 되돌아 오지 않는다</p>
+        <button "right" id="hide"  style="float: right;">Hide</button>
+        <button "right" id="show" style="float: right;">Show</button>
+      </div>
+
+      <div class="Title">
+
+        <img src="http://i63.tinypic.com/2mmftyx.gif" >
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#tra">Travel</a></li>
+          <li><a href="development.html">Development</a></li>
+          <li><a href="wealth.html">Wealth</a></li>
+          <li><a href="fun.html">Fun</a></li>
+        </ul>
+      </div>
+
+      <div class="content" id="bgc">
+        <div class="first" >
+          <img src="https://media.vingle.net/images/ca_l/nyk2062haj.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="second">
+          <img src="https://media.vingle.net/images/ca_l/fzzbwou2vl.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="third">
+          <img src="https://media.vingle.net/images/ca_l/6xt5bbc7q6.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="fourth">
+          <img src="https://media.vingle.net/images/ca_l/u9yze4r70u.jpg" width="300px" height="240px">
+        </div>
+      </div>
+
+      <div class = "contents">
+
+        <div class = "contents1">
+          <div class="Travel">
+            <p class="title" id="tra" style="background-color:#E5EBF7;color:#33C8F2;"><b>Travel</b></p>
+            <div class="w3-content w3-display-container">
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb3.phinf.naver.net/MjAxNzA5MTRfOSAg/MDAxNTA1MzY1MTA2MTgz.Tbm2AtaBSd_5811QC9oJpp6HGX9LAcg0taL1h1JgWCEg.ttF6KlseUXNXcc-Nh-IMpImxhjI0vLyKrLaLQ_e4o2Ig.JPEG.s1993_blue/image_7514400121505365039306.jpg?type=w800" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                카파도키아 열기구에서 동화같은 풍경 감상하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/cfile/tistory/27282F4652842EBA24" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+              태국에서 러이끄라통 축제 즐기기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://www.barusurf.com/wp-content/uploads/2016/11/06-1.jpg" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                서퍼들의 천국, 롬복에서 서핑하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://www.saveatrain.com/blog/wp-content/uploads/2019/03/ccimage-shutterstock_583564768.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                이탈리아 가르다 호수에서 세일링 보트타기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://image.fmkorea.com/files/attach/new/20180615/486616/609381/1105906966/52fa190f1eecb78380040d1eb067841c.jpeg" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                하울의 움직이는 성, 프랑스 콜마르 가기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://www.wetravel.kr/data/editor/1807/thumb-20180719104731_7e40fab9229386150e0c3f64eb9cd936_ag7x_600x397.png" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+               사하라 사막에서 별 사진 찍기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://image.koreatimes.com/article/2017/06/23/20170623100948591.jpg" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                노르웨이 예이랑에르피오르의 절경 감상하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/cfile/tistory/99D8F3365A743C0122" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                비포 선셋에 나온 셰익스피어 앤 컴퍼니 찾아보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://img.hani.co.kr/imgdb/resize/2017/0907/00501348_20170907.JPG" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                지리산 트레킹 하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb1.phinf.naver.net/MjAxODAyMjFfMTgx/MDAxNTE5MjE0ODkzODEw.237Lkc_XOSQ94fvexvzzRaZId0zEhlxGrHKf_OAjmPsg.zH7nWsRfmkTiABpyGU-IxtYAO_6mifPbdxL5Dad-LLIg.JPEG.simonslife/image_1184784411519214782454.jpg?type=w800" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                스타벅스의 디즈니랜드 시애틀 리저브 로스터리 가보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://admin.templestay.com/upload/gallery/thumb/%EB%8F%99%ED%99%94%EC%82%AC-%ED%85%9C%ED%94%8C%EC%8A%A4%ED%85%8C%EC%9D%B4-%EB%B0%9C%EC%9A%B0%EA%B3%B5%EC%96%91.jpg" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                템플스테이로 힐링하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://images.khan.co.kr/exclu/200406/185/2004080300081.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                인도 아그라에서 물에 비친 타지마할 보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://image.koreatimes.com/article/2019/05/14/201905142120175c1.jpg" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                칸 영화제의 레드카펫 구경하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://image.kkday.com/v2/image/get/w_960%2Cc_fit%2Cq_55%2Ct_webp/s1.kkday.com/product_20226/20181023072540_d7ia3/jpg" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                사하라 사막에서 샌드보드 타기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://dhcdn.design.co.kr/cms/img/2017/08/M.1502342395.974.2.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+               호텔급 이글루에서 밤 보내기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwzN6cfIVmSzNzEUb-oCapNcrZLb08aw8yrxpaQ7r3qdXfvJhaNw" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                페루의 하늘에서 나스카 라인 내려다 보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://cbmpress.com/vancouver/wp-content/uploads/sites/2/2018/02/000-1.png" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                오로라와 함께 북유럽의 여름밤 즐기기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://image.chosun.com/sitedata/image/201805/04/2018050400695_0.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                돈키호테의 배경이 된 마을 콘수에그라 가기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://post-phinf.pstatic.net/MjAxOTA1MTRfMTI4/MDAxNTU3ODE2MzIxNTkw.kGf3_I7qe8ytlpHdsN8JqunXKLxgMCYTnELjEQZ0J-Yg.-xRan-FvOalf4q6lEMHsjq9rHyfBMZCKRGLzrNxKDicg.JPEG/36159355111_cf10c8d86c_k.jpg?type=w1200" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                북유럽의 해가 지지 않는 밤 즐기기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://scontent-sea1-1.cdninstagram.com/vp/60bc290a71ee37b984fe498c241567e9/5D2FEFA5/t51.2885-15/e35/53091587_2520320668195237_3392558008390096209_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com&se=7&ig_cache_key=MjAxMjI5MTA0MTMxMTgwNDI1MQ%3D%3D.2" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+               센과 치히로의 행방불명의 배경 대만 지우펀에서 길 읽기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://50plus.or.kr/upload/im/2019/01/1014c06a-30ec-494b-88ca-8f927f708d07.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                남극의 빙하 사이로 크루징 하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb1.phinf.naver.net/MjAxODAxMTVfMjM4/MDAxNTE1OTkyMDQyMjcz.xoci9iso__hFetYd2QLdSPmdWaOjVsrpNnYCRSBHSLsg.vv7W7Qvxl-vvtafuR_Y66tCbCXvbnCEAHQUY08TkEwMg.JPEG.windchoco/IMG_3384.jpg?type=w800" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                아이슬란드 최고의 휴양지 블루 라군에서 온천욕하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://scontent.cdninstagram.com/vp/acd2a1426af8ee847f2dc2e2bb52b629/5D3E7834/t51.2885-15/e35/c181.0.718.718/s480x480/56711312_643891749357494_2382571739363746433_n.jpg?_nc_ht=scontent-msp1-1.cdninstagram.com" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                상트페테르부르크의 아이스크림 성당, 피의 구원 사원 보러가기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://www.doopedia.co.kr/_upload/image5/travel/editor/1808/28/rep_20180828081330430_thumb_2000_1024.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+              페루 마추피추 2000 고지에서 셀카찍기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://image.chosun.com/sitedata/image/201609/22/2016092200875_0.jpg" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  독일 뭰헨 옥토버페스트 즐기기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/cfile/tistory/999EB6405BBDE41502" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                  스위스 체르마트에서 마테호른 감상하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://images.hwlife.hscdn.com//library/i0354_thumb.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+              여름프로방스의 만개한 라벤더 밭에서 걷기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mybucketlist.co.kr/wp-content/uploads/2017/10/rigabeerbike-1508204727kg8n4.jpg" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+               리가에서 비어바이크 타고 올드타운 돌아다니기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t3.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/2fG8/image/bba1m8Kysv1Xpa7M7HolMW3qVlg.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+              베네주엘라 앙헬 폭포에서 자연의 힘 경험하기
+              </div>
+            </div>
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            var myIndex = 0;
+            carousel();
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+            }
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 2100); // Change image every 2 seconds
+            }
+            </script>
+
+          </div>
+
+          </div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>

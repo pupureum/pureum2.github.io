@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2017203096_이푸름</title>
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story|Lobster|Akronim|Gugi|Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script type="text/javascript">
+
+    function realtimeClock() {
+      document.rtcForm.rtcInput.value = getTimeStamp();
+      setTimeout("realtimeClock()", 1000);
+    }
+
+
+    function getTimeStamp() {
+      var d = new Date();
+
+      var s =
+        leadingZeros(d.getFullYear(), 4) + '-' +
+        leadingZeros(d.getMonth() + 1, 2) + '-' +
+        leadingZeros(d.getDate(), 2) + ' ' +
+
+        leadingZeros(d.getHours(), 2) + ':' +
+        leadingZeros(d.getMinutes(), 2) + ':' +
+        leadingZeros(d.getSeconds(), 2);
+
+      return s;
+    }
+
+    function leadingZeros(n, digits) {
+      var zero = '';
+      n = n.toString();
+
+      if (n.length < digits) {
+        for (i = 0; i < digits - n.length; i++)
+          zero += '0';
+      }
+      return zero + n;
+    }
+    </script>
+
+    <script type="text/javascript">
+
+    function ready(){
+
+    }
+
+    </script>
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#hide").click(function(){
+    $("p").hide();
+      });
+    $("#show").click(function(){
+    $("p").show();
+      });
+    });
+    </script>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .mySlides {display:none;}
+
+      .wrap {
+        width: 1200px;
+        margin: auto;
+      }
+
+      .추가 {
+      font-family: 'Lobster', cursive;
+      color: #2E9AFE;
+      font-size:130%;
+            }
+
+      .header {
+      font-family: 'Gugi', cursive;
+      color: #FE2E9A;
+      font-weight:bold;
+      background: linear-gradient(to bottom, rgba(94,196,237,1) 0%,rgba(183,229,247,1) 35%,rgba(254,255,255,1) 74%);
+            }
+
+      .Title {
+        height:120px;
+        font-size:200%;
+        left: 200px;
+        text-align: center;
+      }
+
+      .menu {
+        background-color: #C8AEF4;
+        height: 50px;
+      }
+
+      .menu ul li:hover {
+        background: skyblue;
+        font-size: 20px;
+      }
+
+      .menu ul {
+        list-style: none;
+      }
+
+      .menu ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin: 15px;
+      }
+
+      .menu ul li {
+        float: left;
+        height: 49px;
+        width: 300px;
+        text-align: center;
+        opacity: 0.8;
+        transition: 1.5s;
+        font-weight: bold;
+      }
+
+      .content {
+        width: 1200px;
+        height: 250px;
+        margin-top: 15px;
+      }
+
+      .first {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .second {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .third {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .fourth {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+
+      .text {
+        text-align: justify;
+        padding: 10px;
+        font-family: 휴먼매직체, serif;
+        font-size: 25px;
+      }
+
+      .contents {
+        width: 1200px;
+        margin: auto;
+        margin-top: 15px;
+
+      }
+
+      .Wealth {
+        float: left;
+        width: 1200px;
+        margin: 5px;
+        font-family: 'Poor Story', cursive;
+        font-size: 25px;
+      }
+
+
+      .relation img {
+        margin: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <body onload="realtimeClock()">
+    <form name="rtcForm">
+    <input type="text" name="rtcInput" size="20px" readonly="readonly"  />
+    </form>
+    </body>
+
+      <div class="wrap">
+        <div class="추가">
+          <a href="sub.htm" target="_blank">Here!</a>
+          <p>Share your own bucket list !! Add by clicking 'Here!'</p>
+        </div>
+        <div class="header">
+          <p align="right">지나가 버린 나날은 또 다시 내 앞으로 되돌아 오지 않는다</p>
+          <button "right" id="hide"  style="float: right;">Hide</button>
+          <button "right" id="show" style="float: right;">Show</button>
+        </div>
+
+      <div class="Title">
+        <img src="http://i63.tinypic.com/2mmftyx.gif" >
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="main_travel.html">Travel</a></li>
+          <li><a href="development.html">Development</a></li>
+          <li><a href="#wea">Wealth</a></li>
+          <li><a href="fun.html">Fun</a></li>
+        </ul>
+      </div>
+
+      <div class="content" id="bgc">
+        <div class="first" >
+          <img src="https://media.vingle.net/images/ca_l/nyk2062haj.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="second">
+          <img src="https://media.vingle.net/images/ca_l/fzzbwou2vl.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="third">
+          <img src="https://media.vingle.net/images/ca_l/6xt5bbc7q6.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="fourth">
+          <img src="https://media.vingle.net/images/ca_l/u9yze4r70u.jpg" width="300px" height="240px">
+        </div>
+      </div>
+
+      <div class = "contents">
+
+        <div class = "contents1">
+          <div class="Wealth">
+            <p class="title" id="wea" style="background-color:#E5EBF7;color:#79312B;"><b>Wealth</b></p>
+            <div class="w3-content w3-display-container">
+
+            <div class="w3-display-container mySlides">
+              <img src="https://cdn.ggumim.co.kr/cache/star_banner/600/20161011155412g245SKbVzU.png" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                옥탑방에 홈 영화관 만들기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb1.phinf.naver.net/MjAxNzAyMjRfMjE0/MDAxNDg3OTI1Mzg3MDI5.Ck7k4VJ9MNv22g3meL-SkLlCuLOe42MS-GNc9vmSkqsg.yHhFDuSf_EpKeWwt3gphHGL0Z34Wx6-LwWvCKJUuoaYg.JPEG.ghkfkdgusah/image_3202876771487925380877.jpg?type=w800" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                영화에 나오는 순금 골드바 한덩이 갖기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb4.phinf.naver.net/20140501_79/kkrjeha_1398924867565oqzAn_JPEG/P1030444.JPG?type=w2" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                홈카페&BAR 만들기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://artinsight.co.kr/n_news/peg/1512/thumb/9bb8cf121dc9a02f67e4adec49b9c2c0_IKFcsMVg9ROrkn6sM.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                내가 만든 예쁜 크리스마스 트리
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://dimg.donga.com/ugc/CDB/SHINDONGA/Article/5c/91/a0/0c/5c91a00c17d5d2738de6.jpg" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                세계 최고가 이탈리아 구두 맞춰 신어보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://www.gardenhotels.co.jp/images/ginza-premier/room/viewbath-double/mainvisual-03.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+               뷰가 예쁜 욕실
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/cfile/tistory/99BEC03359872AE70F" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                정원과 수영장이 있는 예쁜 주택
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://image.koreatimes.com/article/2017/05/12/20170512131446591.gif" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                건물주 되기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://cfile230.uf.daum.net/image/17193E4150BD40072A83B7" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                드레스룸 만들기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://post-phinf.pstatic.net/MjAxNzAzMjRfMTQ3/MDAxNDkwMzM5MDA2MzI0.MWFqNXxUKTSADHyKn5CZXSU0Ipg_xSlZQ1ySAkTSdiwg.ZRQDOYJjONyKGS-ul6PE4AjHKM20kbRjr66orPSG1mAg.JPEG/iefnoinofba.jpg?type=w1200" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                맥북/아이패드 프로
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://post-phinf.pstatic.net/MjAxNzAxMjdfMjQg/MDAxNDg1NDQ1MzE1NDIw.mAlAihTAbzTmTjGnIEzeOOK537aP3I5dJwDmOJYJL7gg.yP2VyHPcque1Jm9-Bjv2-BoNIKXA31xeYXid1obiIhog.PNG/%EB%AA%AC%EC%9E%90.png?type=w1200" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                빈티지 페라리 갖기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://post-phinf.pstatic.net/MjAxODA1MDRfMjgw/MDAxNTI1NDI4Mjk5Mzcx.hA9s5OchbG0TmFGfWdLH9YM64tMBC9o-g6ZDwExgQl0g.BiGcjzosCq73uBzadf2bcsGpf_E6XcFuJIe7CvjewNsg.PNG/%EB%82%A8%EC%9E%90%EB%93%A4%EC%9D%B4_%EC%97%B4%EA%B4%91%ED%95%98%EB%8A%94_%EA%B7%B8_%EA%B4%91%EA%B3%A0%2C_%ED%95%98%EC%9D%B4%EB%84%A4%EC%BC%84_1.png?type=w1200" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                하이네켄 cf에 나오는 내 전용 술창고
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://newsimg.hankookilbo.com/2017/07/29/201707291018985247_2.jpg" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                롤스로이스 팬텀
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb3.phinf.naver.net/20140213_186/smhaus_1392249243716Je7XQ_JPEG/DSCN9676.jpg?type=w2" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                집 안에 있는 주차공간
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://www.shnews.net/news/photo/201901/29382_11211_2337.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+               실내공기 정화에 좋은 아레카 야자
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://pds13.egloos.com/pds/200810/31/97/c0056197_490ae2b9749c9.jpg" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                레고 스타워즈 컬렉션 모으기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://www.hobanartrium.com/uploads/cag1408036/201810/415ec4b5dd144cb05af874bc81c4d1fa_crop.jpg?t=1667149da7d" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                나만의 시그니처 향수 갖기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/cfile/tistory/2260354957C4F60C06" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                내 첫 차 가지기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://st.depositphotos.com/1000129/4507/i/950/depositphotos_45077293-stock-photo-traditional-moroccan-carpets.jpg" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                모로코 전통 카펫 사기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://magazine.hankyung.com/magazinedata/images/photo/201706/0724d809c240f8b69f96755d170043ee.jpg" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+               전 세계 스타벅스 굿즈 모으기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://dispatch.cdnser.be/wp-content/uploads/2017/02/20170219131131_1.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                티파니 본점에서 파텍 필립시계 구입하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://cfile23.uf.tistory.com/image/2759D24F542D78A110211A" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                해변이 보이는 별장
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb3.phinf.naver.net/MjAxNjEyMDVfMjEz/MDAxNDgwODgwNjE5Mzcy.Kp5Oeu-oVwaoI0SLuD714Y90WQGqxPHk76pEdtvw4EYg.F_n6lKF6WhxPZRoK6kitNFsYX_euEhs-IcJpS5X2VAIg.JPEG.graduatestory/%EC%97%B0%EC%98%88%EC%9D%B8%EB%B3%BC%EB%A7%81%EC%9E%A5KB%EB%B3%BC%EB%A7%81%EC%9E%A5_%EA%B1%B8%EC%8A%A4%EB%8D%B0%EC%9D%B4%ED%98%9C%EB%A6%AC_%EC%A7%81%EC%B0%8D_%EC%82%AC%EC%A7%84_%2823%29.jpg?type=w800" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+              마이볼 갖기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://funshop.akamaized.net/products/0000048961/vs_image400.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+              이탈리아에서 장인의 수제 우산 구입하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://www.wikihow.com/images_en/thumb/0/0d/Make-a-Ceiling-Look-Higher-Step-1-Version-3.jpg/v4-728px-Make-a-Ceiling-Look-Higher-Step-1-Version-3.jpg" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  내가 만든 색의 페인트로 칙칙한 방 분위기 바꾸기
+              </div>
+            </div>
+
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            var myIndex = 0;
+            carousel();
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+            }
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 2100); // Change image every 2 seconds
+            }
+            </script>
+
+          </div>
+
+          </div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>

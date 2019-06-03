@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2017203096_이푸름</title>
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story|Lobster|Gugi|Akronim|Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <script type="text/javascript">
+
+    function realtimeClock() {
+      document.rtcForm.rtcInput.value = getTimeStamp();
+      setTimeout("realtimeClock()", 1000);
+    }
+
+
+    function getTimeStamp() {
+      var d = new Date();
+
+      var s =
+        leadingZeros(d.getFullYear(), 4) + '-' +
+        leadingZeros(d.getMonth() + 1, 2) + '-' +
+        leadingZeros(d.getDate(), 2) + ' ' +
+
+        leadingZeros(d.getHours(), 2) + ':' +
+        leadingZeros(d.getMinutes(), 2) + ':' +
+        leadingZeros(d.getSeconds(), 2);
+
+      return s;
+    }
+
+    function leadingZeros(n, digits) {
+      var zero = '';
+      n = n.toString();
+
+      if (n.length < digits) {
+        for (i = 0; i < digits - n.length; i++)
+          zero += '0';
+      }
+      return zero + n;
+    }
+    </script>
+
+    <script type="text/javascript">
+
+    function ready(){
+
+    }
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#hide").click(function(){
+    $("p").hide();
+      });
+    $("#show").click(function(){
+    $("p").show();
+      });
+    });
+    </script>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .mySlides {display:none;}
+
+      .wrap {
+        width: 1200px;
+        margin: auto;
+      }
+
+      .추가 {
+      font-family: 'Lobster', cursive;
+      color: #2E9AFE;
+      font-size:130%;
+            }
+
+      .header {
+        font-family: 'Gugi', cursive;
+      color: #FE2E9A;
+      font-weight:bold;
+      background: linear-gradient(to bottom, rgba(94,196,237,1) 0%,rgba(183,229,247,1) 35%,rgba(254,255,255,1) 74%);
+            }
+
+      .Title {
+        height:120px;
+        font-size:200%;
+        left: 200px;
+        text-align: center;
+      }
+
+      .menu {
+        background-color: #C8AEF4;
+        height: 50px;
+      }
+
+      .menu ul li:hover {
+        background: skyblue;
+        font-size: 20px;
+      }
+
+      .menu ul {
+        list-style: none;
+      }
+
+      .menu ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin: 15px;
+      }
+
+      .menu ul li {
+        float: left;
+        height: 49px;
+        width: 300px;
+        text-align: center;
+        opacity: 0.8;
+        transition: 1.5s;
+        font-weight: bold;
+      }
+
+      .content {
+        width: 1200px;
+        height: 250px;
+        margin-top: 15px;
+      }
+
+      .first {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .second {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .third {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .fourth {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+
+      .text {
+        text-align: justify;
+        padding: 10px;
+        font-family: 휴먼매직체, serif;
+        font-size: 25px;
+      }
+
+      .contents {
+        width: 1200px;
+        margin: auto;
+        margin-top: 15px;
+
+      }
+
+      .Fun {
+        float: left;
+        width: 1200px;
+        margin: 5px;
+        font-family: 'Poor Story', cursive;
+        font-size: 25px;
+      }
+
+
+      .relation img {
+        margin: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <body onload="realtimeClock()">
+    <form name="rtcForm">
+    <input type="text" name="rtcInput" size="20px" readonly="readonly"  />
+    </form>
+    </body>
+
+    <div class="wrap">
+      <div class="추가">
+        <a href="sub.htm" target="_blank">Here!</a>  <!--새로운 창 이 아닌 새 탭에서 연다. -->
+        <p>Share your own bucket list !! Add by clicking 'Here!'</p>
+      </div>
+      <div class="header">
+        <p align="right">지나가 버린 나날은 또 다시 내 앞으로 되돌아 오지 않는다</p>
+        <button "right" id="hide"  style="float: right;">Hide</button>
+        <button "right" id="show" style="float: right;">Show</button>
+      </div>
+
+      <div class="Title">
+        <img src="http://i63.tinypic.com/2mmftyx.gif" >
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="main_travel.html">Travel</a></li>
+          <li><a href="development.html">Development</a></li>
+          <li><a href="wealth.html">Wealth</a></li>
+          <li><a href="#fun">Fun</a></li>
+        </ul>
+      </div>
+
+      <div class="content" id="bgc">
+        <div class="first" >
+          <img src="https://media.vingle.net/images/ca_l/nyk2062haj.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="second">
+          <img src="https://media.vingle.net/images/ca_l/fzzbwou2vl.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="third">
+          <img src="https://media.vingle.net/images/ca_l/6xt5bbc7q6.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="fourth">
+          <img src="https://media.vingle.net/images/ca_l/u9yze4r70u.jpg" width="300px" height="240px">
+        </div>
+      </div>
+
+      <div class = "contents">
+
+        <div class = "contents1">
+          <div class="Fun">
+            <p class="title" id="fun" style="background-color:#E5EBF7;color:green;"> <b>Fun</b></p>
+            <div class="w3-content w3-display-container">
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb4.phinf.naver.net/20120208_191/lmjpt_1328703664142T4jvM_JPEG/SDC19261_%BB%E7%BA%BB_%BB%E7%BA%BB.jpg?type=w2" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                한강 다리 걸어서 건너보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://scontent-atl3-1.cdninstagram.com/vp/447d46570fa273d81d98659b1027ea4c/5D854C01/t51.2885-15/e35/40408661_537121393399017_6174087583583641483_n.jpg?_nc_ht=scontent-atl3-1.cdninstagram.com" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                전주 한옥마을 한복입고 돌아다니기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t4.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/6qtt/image/HJm7zeY5myx5nRyKv0dHYBo9iZw.jpg" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                비오는날 주위 시선 신경쓰지 않고 비맞고 걸어다니기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://cfile226.uf.daum.net/image/1976193A501B303E060787" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                낚시해서 회/매운탕 그 자리에서 즉석으로 해먹기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/cfile/tistory/13407F054B6FDFF8AA" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                패러글라이딩 하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://ph.idomin.com/news/photo/201109/358996_271556_934.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+               수상스키 해보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://ojsfile.ohmynews.com/STD_IMG_FILE/2012/1220/IE001531767_STD.jpg" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                프리허그 하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://scontent-lga3-1.cdninstagram.com/vp/90dad5c3f9a5adfc8b4daaa68fee1de1/5D556592/t51.2885-15/sh0.08/e35/c37.0.1006.1006a/s640x640/53970512_465436954255052_5698319161505360434_n.jpg?_nc_ht=scontent-lga3-1.cdninstagram.com" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                고등학교 졸업 후 교복입고 데이트해보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F9975724B5C96A0E811" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                모터쇼 보러가기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://image14.hanatour.com/uploads/2016/12/00.jpg" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                브로드웨이에서 뮤지컬 보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://post-phinf.pstatic.net/MjAxNzA3MDhfMjA5/MDAxNDk5NTA2Mjk5OTg0.51DpQOmCovPZu87vMZweeUM7_TF11-cCxbiE6sUFTIsg.R3hs3GIvdFpKEFQSzXMRCyacIcAZ8ETerezWqUMxHokg.JPEG/mainbanner_1.jpg?type=w1200" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                5성급 스위트룸에서 잠자기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/19wK/image/fbmzooQgx_lAEURg3JQ4vCtGCG0.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                번지점프 하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://post-phinf.pstatic.net/MjAxODEwMjlfMTU2/MDAxNTQwNzg3MjA5MzQ3.Bb85ZwigP3ORpU3f7LSDRWy7yUCsG76mUwLvoRrlNzog.VvTeLnEju1t0uZYnFMrAFwE216lovvCQkV6R27_wT0Ag.JPEG/Screenshot_2018-10-29_at_13.26.01.jpg?type=w1200" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                새벽에 텅 빈 도로를 드라이브하면서 음악 크게 틀고 달리기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://s-i.huffpost.com/gen/5579382/thumbs/o-D-570.jpg?7" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                예능 강식당에 나오는 음식따라 만들기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://newsimg.sedaily.com/2017/01/15/1OATWH3IS0_1.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+               포장마차에서 혼자 술 마셔보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/cfile/tistory/22167A3358AE275321" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                천만원 들고 카지노 가보기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://www.sphinfo.com/wp-content/uploads/2015/02/20150216_restuarants-1024x509.png" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                전국 맛집 돌아다니기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://t1.daumcdn.net/cfile/tistory/25226B5055F140A910" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                내일로 7일권 끊고 일주일간 기차 여행하기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://hsdshm.ilikedoc.kr/upload/hsdshm/images/sub04_img01.png" style="width:100%">
+              <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                건강검진 받기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="http://mblogthumb1.phinf.naver.net/MjAxODA4MDZfNTAg/MDAxNTMzNTY2OTUwNjYx.1yd9RZm57tsoojSrJmY9ZDBqPEZ9E78r7iUWdkNQda8g.bYOjLAxUigRNYs0ROqOv0ELzpvZrXfqcvlmRtyKkcI4g.JPEG.athomegh/image_3834025701533564481245.jpg?type=w800" style="width:100%">
+              <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+               뉴욕에서 한달동안 살기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://travelblog.expedia.co.kr/wp-content/uploads/2016/06/03.jpg" style="width:100%">
+              <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                제주도 계획없이 당일치기로 다녀오기
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="https://file.mk.co.kr/meet/neds/2018/03/image_readtop_2018_144843_15202235393226790.jpg" style="width:100%">
+              <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                영화 리틀포레스트에 나오는 음식따라 만들기
+              </div>
+            </div>
+
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            var myIndex = 0;
+            carousel();
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+            }
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 2100); // Change image every 2 seconds
+            }
+            </script>
+
+          </div>
+
+          </div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>

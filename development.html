@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2017203096_이푸름</title>
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story|Lobster|Akronim|Gugi|Nanum+Brush+Script&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script type="text/javascript">
+
+    function realtimeClock() {
+      document.rtcForm.rtcInput.value = getTimeStamp();
+      setTimeout("realtimeClock()", 1000);
+    }
+
+
+    function getTimeStamp() {
+      var d = new Date();
+
+      var s =
+        leadingZeros(d.getFullYear(), 4) + '-' +
+        leadingZeros(d.getMonth() + 1, 2) + '-' +
+        leadingZeros(d.getDate(), 2) + ' ' +
+
+        leadingZeros(d.getHours(), 2) + ':' +
+        leadingZeros(d.getMinutes(), 2) + ':' +
+        leadingZeros(d.getSeconds(), 2);
+
+      return s;
+    }
+
+    function leadingZeros(n, digits) {
+      var zero = '';
+      n = n.toString();
+
+      if (n.length < digits) {
+        for (i = 0; i < digits - n.length; i++)
+          zero += '0';
+      }
+      return zero + n;
+    }
+    </script>
+
+    <script type="text/javascript">
+
+    function ready(){
+
+    }
+
+    </script>
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#hide").click(function(){
+    $("p").hide();
+      });
+    $("#show").click(function(){
+    $("p").show();
+      });
+    });
+    </script>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .mySlides {display:none;}
+
+      .wrap {
+        width: 1200px;
+        margin: auto;
+      }
+
+      .추가 {
+      font-family: 'Lobster', cursive;
+      color: #2E9AFE;
+      font-size:130%;
+            }
+
+      .header {
+      font-family: 'Gugi', cursive;
+      color: #FE2E9A;
+      font-weight:bold;
+      background: linear-gradient(to bottom, rgba(94,196,237,1) 0%,rgba(183,229,247,1) 35%,rgba(254,255,255,1) 74%);
+            }
+
+      .Title {
+        height:120px;
+        font-size:200%;
+        left: 200px;
+        text-align: center;
+      }
+
+      .menu {
+        background-color: #C8AEF4;
+        height: 50px;
+      }
+
+      .menu ul li:hover {
+        background: skyblue;
+        font-size: 20px;
+      }
+
+      .menu ul {
+        list-style: none;
+      }
+
+      .menu ul li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        margin: 15px;
+      }
+
+      .menu ul li {
+        float: left;
+        height: 49px;
+        width: 300px;
+        text-align: center;
+        opacity: 0.8;
+        transition: 1.5s;
+        font-weight: bold;
+      }
+
+      .content {
+        width: 1200px;
+        height: 250px;
+        margin-top: 15px;
+      }
+
+      .first {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .second {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .third {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+      .fourth {
+        float: left;
+        width: 290px;
+        height: 250px;
+        margin: 5px;
+      }
+
+
+      .text {
+        text-align: justify;
+        padding: 10px;
+        font-family: 휴먼매직체, serif;
+        font-size: 25px;
+      }
+
+      .contents {
+        width: 1200px;
+        margin: auto;
+        margin-top: 15px;
+
+      }
+
+      .Wealth {
+        float: left;
+        width: 1200px;
+        margin: 5px;
+        font-family: 'Poor Story', cursive;
+        font-size: 25px;
+      }
+
+
+      .relation img {
+        margin: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <body onload="realtimeClock()">
+    <form name="rtcForm">
+    <input type="text" name="rtcInput" size="20px" readonly="readonly"  />
+    </form>
+    </body>
+
+      <div class="wrap">
+        <div class="추가">
+          <a href="sub.htm" target="_blank">Here!</a>
+          <p>Share your own bucket list !! Add by clicking 'Here!'</p>
+        </div>
+        <div class="header">
+          <p align="right">지나가 버린 나날은 또 다시 내 앞으로 되돌아 오지 않는다</p>
+          <button "right" id="hide"  style="float: right;">Hide</button>
+          <button "right" id="show" style="float: right;">Show</button>
+        </div>
+
+      <div class="Title">
+        <img src="http://i63.tinypic.com/2mmftyx.gif" >
+      </div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="main_travel.html">Travel</a></li>
+          <li><a href="#dev">Development</a></li>
+          <li><a href="wealth.html">Wealth</a></li>
+          <li><a href="fun.html">Fun</a></li>
+        </ul>
+      </div>
+
+      <div class="content" id="bgc">
+        <div class="first" >
+          <img src="https://media.vingle.net/images/ca_l/nyk2062haj.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="second">
+          <img src="https://media.vingle.net/images/ca_l/fzzbwou2vl.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="third">
+          <img src="https://media.vingle.net/images/ca_l/6xt5bbc7q6.jpg" width="300px" height="240px">
+
+        </div>
+
+        <div class="fourth">
+          <img src="https://media.vingle.net/images/ca_l/u9yze4r70u.jpg" width="300px" height="240px">
+        </div>
+      </div>
+
+      <div class = "contents">
+
+        <div class = "contents1">
+          <div class="Wealth">
+            <p class="title" id="dev" style="background-color:#E5EBF7;color:#F8B034;"><b>Development</b></p>
+            <div class="w3-content w3-display-container">
+
+              <div class="w3-display-container mySlides">
+                <img src="https://d1blyo8czty997.cloudfront.net/tour-photos/1445/1200x600/2439662939.jpg" style="width:100%">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                  스킨스쿠버 배워서 자격증 따기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://post-phinf.pstatic.net/MjAxODAyMTJfMTE3/MDAxNTE4Mzk5MDA3NTU2.mZouhOq9WUlDykQ5x440imt8yT8ewTF-sEV2hTtJSUUg.F6RyQnw2lPP2v-l0CVqYTuqaq6adOAxZmQR_O6klF7og.JPEG/read-aloud-chapter-books-for-kids.jpg?type=w1200" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                영어 원서/잡지 끝까지 이해하고 다 읽기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://thelime.co.kr/web/product/calligraphy/calligraphy_20-01.jpg" style="width:100%">
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                  캘리그라피 배우기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="http://hexguitars.com/wp-content/uploads/2017/08/1.jpg" style="width:100%">
+                <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                  기타 연주 자연스럽게 하도록 배워보기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://t1.daumcdn.net/cfile/tistory/25242A4957DEC8A146" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                  바리스타 자격증 따기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://cdn.ggumim.co.kr/cache/star/600/20170525154331qfMo1EKsIL.jpg" style="width:100%">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                 인테리어 공부해보기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="http://thumbnail.egloos.net/500x0/http://pds27.egloos.com/pds/201607/27/99/a0356699_57980b35db064.jpg" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  플라잉 요가 배우기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://50plus.or.kr/upload/im/2018/01/862c6fae-e60f-4523-87f2-edce785716cc.jpg" style="width:100%">
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                  탱고 배워서 공연하기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://t1.daumcdn.net/cfile/tistory/2614D94C55C95F2C31" style="width:100%">
+                <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                  회 뜨는 법, 스시 만드는 법 대우기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://s3.ap-northeast-2.amazonaws.com/event-localnaeil/FileData/Article/201801/8dd257ed-ae97-4690-ad5e-83acadb3d292.JPG" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                  목재로 가구 만드는 법 배우기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://www.nakamura-s.com/chori/korean/course/img/pastry/p_category01.jpg" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                  제과/제빵 배우기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="http://upinews.kr/news/data/20180908/p1065574033060620_294_thum.jpg" style="width:100%">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                  뮤지컬 배워서 공연해보기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://media.istockphoto.com/vectors/world-map-illustration-vector-id522786444" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  세계 돌아다니며 각국 언어 배우기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="http://www.indica.or.kr/xe/files/attach/images/2662689/082/078/005/a05b7fa172015929c77a28b3406ba0fe.png" style="width:100%">
+                <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                  영상 편집기술 배워서 유튜브에 영상 올려보기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="http://www.outdoornews.co.kr/news/photo/201603/21507_65892_324.jpg" style="width:100%">
+                <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                 스포츠 클라이밍 배우기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://post-phinf.pstatic.net/MjAxNzA0MDZfOTkg/MDAxNDkxNDQwMjEyMzA4.RFA4mbfmMMksWMn3HIZ6Cr5hE8gXuX2sOiG8jGcfKVkg.SdJxML-d41mft0tHFAp3JtUrBWDGfY11koS9QHq6iL8g.JPEG/%ED%95%9C%EC%8B%9D%EC%A1%B0%EB%A6%AC%EC%82%AC%EC%9E%90%EA%B2%A9%EC%A6%9D1.jpg?type=w1200" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                  한식 자격증 도전하기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="http://etretat.co.kr/wp-content/uploads/2017/08/lesson_2-1024x683.jpg" style="width:100%">
+                <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+                  플라워 클래스에서 예쁜 부케 만들기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://post-phinf.pstatic.net/MjAxODEyMDNfMjM2/MDAxNTQzODA4ODk3MTU4.wx8XfWoGm_ofQeWwofsxvqYfmzwDchFTIM8CoXbtOPkg.sFTZ5uC7A2kQSAh8wzlp7N-KDoInpS_PSgddYC9cWcog.PNG/%EB%A9%94%EC%9D%B4%ED%81%AC%EC%97%85%EA%B5%AD%EA%B0%80%EC%9E%90%EA%B2%A9%EC%A6%9D%EC%8B%A4%EA%B8%B0_%EB%85%B8%EC%97%AD%EB%A9%94%EC%9D%B4%ED%81%AC%EC%97%85_%EB%85%B8%EC%97%AD%EB%B6%84%EC%9E%A5_%287%29.png?type=w1200" style="width:100%">
+                <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                  메이크업 자격증 따기
+                </div>
+              </div>
+
+              <div class="w3-display-container mySlides">
+                <img src="https://i.ytimg.com/vi/RyHzyuRruL0/maxresdefault.jpg" style="width:100%">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  호신술 배우기
+                </div>
+              </div>
+
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+            </div>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            var myIndex = 0;
+            carousel();
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+            }
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 2100); // Change image every 2 seconds
+            }
+            </script>
+
+          </div>
+
+          </div>
+      </div>
+      <div class="footer">
+      </div>
+    </div>
+  </body>
+</html>
